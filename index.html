@@ -51,7 +51,7 @@
 </head>
 
 <body style="background-color:#000000;margin:0px; padding:0px;">
-  <iframe id="game" id="myiframe" frameborder="0"></iframe>
+  <iframe id="game" frameborder="0"></iframe>
   <script type="text/javascript">
     let url = "https://www.essemnrjbl.cyou";
     let params = window.location.search;
@@ -65,7 +65,7 @@
     frame.src = url;
     function changeFrameHeight() {
       var ifm = document.getElementById("game");
-      ifm.height = document.documentElement.clientHeight;
+      ifm.height = document.documentElement.clientHeight - 4;
       ifm.width = document.documentElement.clientWidth;
     }
     changeFrameHeight();
